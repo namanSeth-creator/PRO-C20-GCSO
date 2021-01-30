@@ -7,7 +7,8 @@ function setup() {
   weight = random(400,1500);
   car = createSprite(50,200,50,50);
   car.velocityX = speed;
-  car.shapeColor = color(225,0,0);
+  car.shapeColor = "black";
+  car.visible = true;
 
   wall = createSprite(1500,200,60, height/2);
   wall.shapeColor = color(80,80,80);
@@ -15,7 +16,7 @@ function setup() {
  }
 
 function draw() {
-  background(0); 
+  background("white"); 
   
   if (wall.x - car.x <(car.width + wall.width)/2){
     car.velocityX = 0;
