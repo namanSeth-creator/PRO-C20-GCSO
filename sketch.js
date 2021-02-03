@@ -29,7 +29,7 @@ function draw() {
       car.shapeColor = color(0,255,0);
     }
   }
-  if (car.x = wall.x){
+  if (car.x === wall.x){
     car.velocityX = 0;
     car.velocityY = 0;
   }
